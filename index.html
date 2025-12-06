@@ -3,165 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bài Học</title>
+<title>Bài học</title>
 
 <style>
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #f5f6fa;
+        background: #f6f8fc;
     }
 
     /* Banner */
     .banner {
         width: 100%;
-        height: 260px;
-        background: url('banner.jpg') center/cover no-repeat;
+        height: 240px;
+        background: url('bai5.jpg') center/cover no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
     }
 
-    /* Lớp phủ mờ để chữ không chìm */
-    .banner::before {
-        content: "";
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0,0,0,0.45);
-    }
-
-    /* Tiêu đề trên banner */
+    /* Tiêu đề giữa banner */
     .banner-title {
-        position: relative;
-        font-size: 42px;
+        font-size: 40px;
+        font-weight: 700;
         color: white;
-        font-weight: 800;
-        text-align: center;
-        text-shadow: 0px 4px 12px black;  /* hiệu ứng đổ bóng */
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.9);
     }
 
-    /* Khối nội dung */
-    .content {
-        width: 85%;
-        max-width: 900px;
-        margin: 40px auto;
-        background: white;
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    /* Nút quay về */
+    .back-btn {
+        display: inline-block;
+        margin: 25px;
+        background: #2a4d69;
+        color: white;
+        padding: 10px 18px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
     }
 
-    .section-title {
+    .back-btn:hover {
+        background: #1d3550;
+    }
+
+    /* Tiêu đề phần */
+    h2 {
         font-size: 32px;
-        font-weight: 800;
-        color: #2a3d55;
-        margin-bottom: 15px;
-        border-left: 6px solid #2a3d55;
-        padding-left: 12px;
+        margin-top: 40px;
+        color: #1a2e40;
+        text-align: left;
+        font-weight: 700;
+        font-family: Arial, sans-serif; /* phông bình thường */
     }
 
-    .text {
+    /* Khung đề bài */
+    .problem-box {
+        background: white;
+        padding: 18px 22px;
+        border-left: 6px solid #2a4d69;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    /* Nội dung */
+    .content {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
         font-size: 18px;
         line-height: 1.6;
-        color: #333;
-        margin-bottom: 35px;
     }
 </style>
-
 </head>
+
 <body>
 
-    <!-- Banner -->
-    <div class="banner">
-        <div class="bai5.jpg">BÀI 5 : THỰC HÀNH CHIA SẺ TÀI NGUYÊN TRÊN MẠNG</div>
+<a href="index.html" class="back-btn">← Quay về trang chủ</a>
+
+<div class="banner">
+    <div class="banner-title">BÀI 5: THỰC HÀNH CHIA SẺ TÀI NGUYÊN TRÊN MẠNG</div>
+</div>
+
+<div class="content">
+
+    <h2>LUYỆN TẬP</h2>
+
+    <div class="problem-box">
+        <b>Đề bài:</b>  
+          <P>Luyện tập 1 trang 33 Tin học 12: Lập các nhóm, mỗi nhóm hai máy tính (gọi là máy A và máy B) thực hành chia sẻ thư mục. Trên mỗi máy tính, hãy tạo một thư mục, có ít nhất một thư mục con và một số tệp văn bản.</P>
+        <p>a) Máy A chia sẻ tệp và thư mục với quyền read. Máy B kiểm tra lại việc sử dụng các tệp chia sẻ để thấy có thể đọc nhưng không thể sửa. </p>
+        <p>b) Máy A thiết lập lại chế độ chia sẻ với quyền read/wtite. Máy B kiểm tra lại việc sử dụng các tệp chia sẻ để thấy có thể đọc và sửa được.</p>
+        <p>c) Máy A hủy bỏ chia sẻ. Máy B kiểm tra để thấy rằng không còn được chia sẻ</p>
+        <p>d) Đảo vai trò, máy B thực hiện các chế độ chia sẻ và máy A kiểm tra. </p>
     </div>
 
-    <!-- Nội dung -->
-    <div class="content">
-        <div class="section-title">LUYỆN </div>
-        <div class="text">
-            Luyện tập 1 trang 33 Tin học 12: Lập các nhóm, mỗi nhóm hai máy tính (gọi là máy A và máy B) thực hành chia sẻ thư mục. Trên mỗi máy tính, hãy tạo một thư mục, có ít nhất một thư mục con và một số tệp văn bản.
-a) Máy A chia sẻ tệp và thư mục với quyền read. Máy B kiểm tra lại việc sử dụng các tệp chia sẻ để thấy có thể đọc nhưng không thể sửa. 
-b) Máy A thiết lập lại chế độ chia sẻ với quyền read/wtite. Máy B kiểm tra lại việc sử dụng các tệp chia sẻ để thấy có thể đọc và sửa được.
-c) Máy A hủy bỏ chia sẻ. Máy B kiểm tra để thấy rằng không còn được chia sẻ
-d) Đảo vai trò, máy B thực hiện các chế độ chia sẻ và máy A kiểm tra. 
-Lời giải:
-Quy trình thực hiện các bước theo yêu cầu:
-1. Lập các nhóm:
-Nhóm 1: Máy A1 và Máy B1
-Nhóm 2: Máy A2 và Máy B2
-2. Thực hiện thực hành:
-a) Máy A chia sẻ tệp và thư mục với quyền read:
-Trên Máy A1:
-Tạo một thư mục và thêm vào ít nhất một tệp văn bản.
-Chia sẻ thư mục với quyền read.
-Trên Máy B1:
-Kết nối đến máy A1 và truy cập vào thư mục chia sẻ.
-Kiểm tra xem các tệp có thể đọc được nhưng không thể sửa được.
-b) Máy A thiết lập lại chế độ chia sẻ với quyền read/write:
-Trên Máy A1:
-Chỉnh sửa cài đặt chia sẻ để cung cấp quyền read/write.
-Trên Máy B1:
-Kiểm tra lại việc sử dụng các tệp chia sẻ để thấy có thể đọc và sửa được.
-c) Máy A hủy bỏ chia sẻ:
-Trên Máy A1:
-Hủy bỏ chia sẻ thư mục.
-Trên Máy B1:
-Kiểm tra để thấy rằng thư mục không còn được chia sẻ nữa.
-d) Đảo vai trò:
-Thực hiện tương tự như trên nhưng lần này Máy B2 chia sẻ và Máy A2 kiểm tra.
-Luyện tập 2 trang 33 Tin học 12: Thực hành chia sẻ máy in theo từng cặp hai nhóm học sinh. Nhóm 1 chia sẻ máy in để nhóm hai sử dụng, sau đó đổi lại vai trò.
-Lời giải:
-Để thực hiện thực hành chia sẻ máy in giữa hai nhóm học sinh, các bước cần thực hiện như sau:
-Bước 1: Chuẩn bị máy in và máy tính
-Nhóm 1:
-Máy in của nhóm 1.
-Một máy tính của nhóm 1 để chia sẻ máy in.
-Nhóm 2:
-Một máy tính của nhóm 2 để sử dụng máy in.
-Bước 2: Chia sẻ máy in
-Nhóm 1:
-Trên máy tính của nhóm 1, chia sẻ máy in sao cho máy tính của nhóm 2 có thể truy cập và sử dụng được máy in này.
-Nhóm 2:
-Kết nối máy tính của nhóm 2 đến máy in đã được chia sẻ từ nhóm 1.
-Bước 3: Sử dụng máy in
-Nhóm 2:
-Sử dụng máy tính của mình để in các tài liệu hoặc hình ảnh bằng máy in đã được chia sẻ từ nhóm 1.
-Bước 4: Đổi vai trò
-Sau khi nhóm 2 đã sử dụng xong máy in, đảo vai trò giữa hai nhóm.
-Bước 5: Thực hiện lại từ đầu
-Nhóm 2:
-Chia sẻ máy in từ máy tính của nhóm 2 để nhóm 1 sử dụng.
-Nhóm 1:
-Sử dụng máy tính của mình để truy cập và sử dụng máy in đã được chia sẻ từ nhóm 2.
+    <p>
+      <p> Quy trình thực hiện các bước theo yêu cầu:</p>
+<p>1. Lập các nhóm:</p>
+<p>Nhóm 1: Máy A1 và Máy B1</p>
+<p>Nhóm 2: Máy A2 và Máy B2</p>
+<p>2. Thực hiện thực hành:</p>
+<p>a) Máy A chia sẻ tệp và thư mục với quyền read:</p>
+<p>Trên Máy A1:</p>
+<p>Tạo một thư mục và thêm vào ít nhất một tệp văn bản.</p>
+<p>Chia sẻ thư mục với quyền read.</p>
+<p>Trên Máy B1:</p>
+<p>Kết nối đến máy A1 và truy cập vào thư mục chia sẻ.</p>
+<p>Kiểm tra xem các tệp có thể đọc được nhưng không thể sửa được.</p>
+<p>b) Máy A thiết lập lại chế độ chia sẻ với quyền read/write:</p>
+<p>Trên Máy A1:</p>
+<p>Chỉnh sửa cài đặt chia sẻ để cung cấp quyền read/write.</p>
+<p>Trên Máy B1:</p>
+<p>Kiểm tra lại việc sử dụng các tệp chia sẻ để thấy có thể đọc và sửa được.</p>
+<p>c) Máy A hủy bỏ chia sẻ:</p>
+<p>Trên Máy A1:</p>
+<p>Hủy bỏ chia sẻ thư mục.</p>
+<p>Trên Máy B1:</p>
+<p>Kiểm tra để thấy rằng thư mục không còn được chia sẻ nữa.</p>
+<p>d) Đảo vai trò:</p>
+<p>Thực hiện tương tự như trên nhưng lần này Máy B2 chia sẻ và Máy A2 kiểm tra.</p>
 
-        </div>
+    </p>
 
-        <div class="section-title">VẬN DỤNG</div>
-        <div class="text">
-         Vận dụng trang 33 Tin học 12: Về phương diện lưu trữ, có thể xem toàn bộ đĩa là thư mục lớn nhất chứa các thư mục khác. Có thể chia sẻ toàn bộ đĩa giống như chia sẻ thư mục.
+      <div class="problem-box">
+        <b>Đề bài:</b>  
+         Luyện tập 2 trang 33 Tin học 12: Thực hành chia sẻ máy in theo từng cặp hai nhóm học sinh. Nhóm 1 chia sẻ máy in để nhóm hai sử dụng, sau đó đổi lại vai trò.
+    </div>
+
+    <p>
+    <p> Để thực hiện thực hành chia sẻ máy in giữa hai nhóm học sinh, các bước cần thực hiện như sau:</p>
+<p>Bước 1: Chuẩn bị máy in và máy tính</p>
+<p>Nhóm 1:</p>
+<p>Máy in của nhóm 1.</p>
+<p>Một máy tính của nhóm 1 để chia sẻ máy in.</p>
+<p>Nhóm 2:</p>
+<p>Một máy tính của nhóm 2 để sử dụng máy in.</p>
+<p>Bước 2: Chia sẻ máy in</p>
+<p>Nhóm 1:</p>
+<p>Trên máy tính của nhóm 1, chia sẻ máy in sao cho máy tính của nhóm 2 có thể truy cập và sử dụng được máy in này.</p>
+<p>Nhóm 2:</p>
+<p>Kết nối máy tính của nhóm 2 đến máy in đã được chia sẻ từ nhóm 1.</p>
+<p>Bước 3: Sử dụng máy in</p>
+<p>Nhóm 2:</p>
+<p>Sử dụng máy tính của mình để in các tài liệu hoặc hình ảnh bằng máy in đã được chia sẻ từ nhóm 1.</p>
+<p>Bước 4: Đổi vai trò</p>
+<p>Sau khi nhóm 2 đã sử dụng xong máy in, đảo vai trò giữa hai nhóm.</p>
+<p>Bước 5: Thực hiện lại từ đầu</p>
+<p>Nhóm 2:</p>
+<p>Chia sẻ máy in từ máy tính của nhóm 2 để nhóm 1 sử dụng.</p>
+<p>Nhóm 1:</p>
+<p>Sử dụng máy tính của mình để truy cập và sử dụng máy in đã được chia sẻ từ nhóm 2.</p>
+
+    </p>
+
+
+    <h2>VẬN DỤNG</h2>
+
+    <div class="problem-box">
+        <b>Đề bài:</b>  
+       Về phương diện lưu trữ, có thể xem toàn bộ đĩa là thư mục lớn nhất chứa các thư mục khác. Có thể chia sẻ toàn bộ đĩa giống như chia sẻ thư mục.
 Để chia sẻ đĩa cần nháy nút phải chuột vào biểu tượng đĩa, chọn properties rồi thực hiện chia sẻ. Hãy tìm hiểu và thực hiện việc chia sẻ toàn bộ một đĩa. 
-Lời giải:
-Thực hiện việc chia sẻ toàn bộ một đĩa trên Windows:
--Chuẩn bị:
-+ Đảm bảo bạn đã đăng nhập vào máy tính với quyền quản trị.
-+ Kiểm tra đĩa mà bạn muốn chia sẻ.
--Chia sẻ đĩa:
-+ Nhấp chuột phải vào biểu tượng đĩa mà bạn muốn chia sẻ (thường là ổ đĩa C: hoặc D:).
-+ Chọn "Properties" từ menu xuất hiện.
-+ Trong cửa sổ Properties, chọn tab "Sharing".
-+ Nhấn vào nút "Advanced Sharing...".
-+ Trong cửa sổ mới xuất hiện, đánh dấu vào hộp "Share this folder".
-+ Đặt tên chia sẻ (Share name) cho đĩa, ví dụ "Drive_Share".
-+ Nhấn "Permissions" để cấu hình quyền truy cập cho người dùng trên mạng.
-+ Sau khi cấu hình xong, nhấn "OK" để đóng cửa sổ Permissions, sau đó nhấn "OK" một lần nữa để hoàn tất việc chia sẻ đĩa.
--Kiểm tra trên mạng:
-+ Trên máy tính khác trong cùng mạng LAN, mở File Explorer và nhập địa chỉ "\[địa chỉ IP hoặc tên máy tính chứa đĩa chia sẻ][tên chia sẻ]" vào thanh địa chỉ và nhấn Enter. Bạn sẽ thấy đĩa đã được chia sẻ xuất hiện và có thể truy cập vào nó từ máy tính khác trong mạng.
 
-        </div>
     </div>
+
+    <p>
+<p>Thực hiện việc chia sẻ toàn bộ một đĩa trên Windows:</p>
+<p>-Chuẩn bị:</p>
+<p>+ Đảm bảo bạn đã đăng nhập vào máy tính với quyền quản trị.</p>
+<p>+ Kiểm tra đĩa mà bạn muốn chia sẻ.</p>
+<p>-Chia sẻ đĩa:</p>
+<p>+ Nhấp chuột phải vào biểu tượng đĩa mà bạn muốn chia sẻ (thường là ổ đĩa C: hoặc D:).</p>
+<p>+ Chọn "Properties" từ menu xuất hiện.</p>
+<p>+ Trong cửa sổ Properties, chọn tab "Sharing".</p>
+<p>+ Nhấn vào nút "Advanced Sharing...".</p>
+<p>+ Trong cửa sổ mới xuất hiện, đánh dấu vào hộp "Share this folder".</p>
+<p>+ Đặt tên chia sẻ (Share name) cho đĩa, ví dụ "Drive_Share".</p>
+<p>+ Nhấn "Permissions" để cấu hình quyền truy cập cho người dùng trên mạng.</p>
+<p>+ Sau khi cấu hình xong, nhấn "OK" để đóng cửa sổ Permissions, sau đó nhấn "OK" một lần nữa để hoàn tất việc chia sẻ đĩa.</p>
+<p>-Kiểm tra trên mạng:</p>
+<p>+ Trên máy tính khác trong cùng mạng LAN, mở File Explorer và nhập địa chỉ "\[địa chỉ IP hoặc tên máy tính chứa đĩa chia sẻ][tên chia sẻ]" vào thanh địa chỉ và nhấn Enter. Bạn sẽ thấy đĩa đã được chia sẻ xuất hiện và có thể truy cập vào nó từ máy tính khác trong mạng.</p>
+
+
+
+    </p>
+
+</div>
 
 </body>
 </html>
+
